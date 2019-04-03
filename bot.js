@@ -23,7 +23,7 @@ const prefix = 'v!'
               };
               message.channel.send('**لديك 15 ثانيه لتفكيك الكلمه**').then(msg => {
 
- const w = ['./img/w1.png'];//الخافيه
+ const w = ['./w1.png'];//الخافيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -99,7 +99,7 @@ const filter = response => {
     return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
 message.channel.send('**لديك 15 ثانيه لحل هذه الغز**').then(msg => {
- const w = ['./img/w1.png'];//الخافيه
+ const w = ['./w1.png'];//الخافيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -174,7 +174,7 @@ client.on('message', message => {
         return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
     };
     message.channel.send('**لديك 15 ثانيه لتركيب الكلمه**').then(msg => {
- const w = ['./img/w1.png'];//الخافيه
+ const w = ['./w1.png'];//الخافيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -255,7 +255,7 @@ client.on('message', message => {
       };
       message.channel.send('** لديك 15 ثانيه لكتابه هذه الكلمه بسرعة**').then(msg => {
       
- const w = ['./img/w1.png'];//الخافيه
+ const w = ['./w1.png'];//الخافيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -332,7 +332,7 @@ message.channel.sendFile(canvas.toBuffer());
         return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
     };
     message.channel.send('**لديك 15 ثانيه لحل المسئله**').then(msg => {
- const w = ['./img/w1.png'];//الخافيه
+ const w = ['./w1.png'];//الخافيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
