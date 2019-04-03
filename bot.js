@@ -5,7 +5,7 @@ const Canvas = require("canvas");
 const jimp = require("jimp");
    let points = {}
    
-const prefix = 'v!'
+const prefix = '$'
   client.on('message', message => {
     if(message.author.bot) return;
             if (!points[message.author.id]) points[message.author.id] = {
@@ -452,7 +452,7 @@ message.channel.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "v!help") {
+ if (message.content === "$help") {
         message.react("✅")
            message.react("📬")
   const embed = new Discord.RichEmbed() 
@@ -460,17 +460,17 @@ client.on("message", message => {
      .setDescription(`
 ══════════ஜ۩۞۩ஜ════════════  
      🎮「العاب」🎮
-   🎮v!فكك
-   🎮v!لغز
-   🎮v!كتابه
-   🎮v!رياضيات
-   🎮v!ركب
-   🎮v!xo
-   🎮v!نقاطي
-   🎮v!top
+   🎮$فكك
+   🎮$لغز
+   🎮$كتابه
+   🎮$رياضيات
+   🎮$ركب
+   🎮$xo
+   🎮$نقاطي
+   🎮$top
 ══════════ஜ۩۞۩ஜ════════════ 
  `)
- .setFooter(`by :Mrkayan`)
+ .setFooter(`MiddleEast-C`)
    message.channel.sendEmbed(embed)
    
    }
@@ -533,7 +533,7 @@ client.on('message' , message => {
     .catch(console.error);
   }
   else {
-    message.channel.send(`جرب v!xo @uesr`)
+    message.channel.send(`جرب v!xo @user`)
     .then(console.log("Successful error reply"))
     .catch(console.error);
   }
@@ -543,15 +543,7 @@ client.on('message' , message => {
  
  
  
- client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**  
-- Hello ${member} :hearts: 
-       -  انت العضو رقم ${member.guild.memberCount} :man_dancing: 
-              - You Are in a Big Community :dove: 
-                     -  Panther Network :tiger2:  **`) 
-}).catch(console.error)
-});
+
 
 
 
@@ -560,7 +552,7 @@ client.on('message' , message => {
  
  
 client.on("message", function(message) {
-    var prefix = "v!";
+    var prefix = "$";
    if(message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content.split(" ").slice(1).join(" ");
     let messageRPS = message.content.split(" ").slice(2).join(" ");
@@ -599,9 +591,9 @@ reaction3.on("collect", r => {
     })
 }
 });
-const devs = ["378909031672184844"]// ايدي الخاص بحسابك
+const devs = ["321476121956974595"]// ايدي الخاص بحسابك
 
-const adminprefix = "v!";//Narox
+const adminprefix = "$";//Narox
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
